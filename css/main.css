@@ -1,0 +1,188 @@
+.hamburger-menu .menu {
+  width: 100%;
+  height: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #262626; }
+
+.navbar {
+  position: relative;
+  z-index: 300; }
+  .navbar-navigation {
+    display: flex; }
+    .navbar-navigation-left {
+      width: 50vw;
+      height: 100vh;
+      background-color: #262626;
+      position: fixed;
+      right: -50vw;
+      transition: right 0.8s; }
+      .navbar-navigation-left .left-img {
+        width: 35%;
+        position: absolute;
+        box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+        opacity: 0.7;
+        border-radius: 10px; }
+      .navbar-navigation-left .left-img-1 {
+        top: 10%;
+        left: 10%; }
+      .navbar-navigation-left .left-img-2 {
+        top: 20%;
+        left: 20%; }
+      .navbar-navigation-left .left-img-3 {
+        top: 30%;
+        left: 30%; }
+      .navbar-navigation-left .left-img-4 {
+        top: 40%;
+        left: 40%; }
+      .navbar-navigation-left .left-img-5 {
+        top: 50%;
+        left: 50%; }
+      .navbar-navigation-left .left-img-6 {
+        top: 60%;
+        left: 60%; }
+      .navbar-navigation-left .left-img-7 {
+        top: 70%;
+        left: 70%; }
+      .navbar-navigation-left .left-img-8 {
+        top: 80%;
+        left: 80%; }
+    .navbar-navigation-right {
+      width: 50vw;
+      height: 100vh;
+      background-color: #1f1d1d;
+      position: fixed;
+      left: -50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: left 0.8s; }
+    .navbar-navigation .nav-list-item {
+      list-style: none; }
+    .navbar-navigation .nav-list-link {
+      font-family: "Dancing Script", cursive;
+      font-size: 50px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #bbb;
+      text-decoration: none;
+      display: block;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.5s; }
+      .navbar-navigation .nav-list-link:hover {
+        color: #d3ab55;
+        letter-spacing: 4px; }
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  right: 0; }
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  left: 0; }
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg); }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg); }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0; }
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg); }
+
+.hamburger-menu {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  z-index: 300; }
+  .hamburger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.5s; }
+    .hamburger-menu .menu-line {
+      width: 100%;
+      height: 4px;
+      background-color: #d3ab55;
+      transform-origin: right;
+      transition: all 0.5s 0.5s; }
+
+.navbar-navigations {
+  position: relative;
+  z-index: 200;
+  display: flex; }
+  .navbar-navigations-lefts {
+    width: 50vw;
+    height: 100vh;
+    background-color: #262626;
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    right: 50vw;
+    transition: left 0.8s; }
+  .navbar-navigations .left-img-title {
+    width: 35%;
+    position: absolute;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+    opacity: 0.7;
+    border-radius: 10px; }
+  .navbar-navigations .left-img-1_1 {
+    top: 12%;
+    left: 12%; }
+  .navbar-navigations .left-img-2_1 {
+    top: 20%;
+    left: 20%; }
+  .navbar-navigations .left-img-3_1 {
+    top: 30%;
+    left: 30%; }
+  .navbar-navigations .left-img-4_1 {
+    top: 40%;
+    left: 40%; }
+  .navbar-navigations .left-img-5_1 {
+    top: 50%;
+    left: 50%; }
+  .navbar-navigations .left-img-6_1 {
+    top: 60%;
+    left: 60%; }
+  .navbar-navigations .left-img-7_1 {
+    top: 70%;
+    left: 70%; }
+  .navbar-navigations .left-img-8_1 {
+    top: 80%;
+    left: 80%; }
+  .navbar-navigations-rights {
+    width: 50vw;
+    height: 100vh;
+    background-color: #1f1d1d;
+    position: fixed;
+    left: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navbar-navigations .nav-list-item {
+    list-style: none; }
+  .navbar-navigations .nav-list-link {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.5s; }
+    .navbar-navigations .nav-list-link:hover {
+      color: #d3ab55;
+      letter-spacing: 4px; }

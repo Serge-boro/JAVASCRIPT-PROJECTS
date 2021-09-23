@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400|Grand+Hotel');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Grand Hotel', cursive;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.preview__life {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 35px;
+  margin-top: -130px;
+  color: #678e3e;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+}
+.tabcontainer {
+  display: flex;
+  width: 1130px;
+  margin: 200px auto;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+.tabcontent {
+  width: 850px;
+  position: relative;
+}
+.tabcontent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tabcontent__descr {
+  position: absolute;
+  top: 300px;
+  right: -177px;
+  width: 550px;
+  height: 359px;
+  background: rgba(251, 254, 93, 0.8);
+  padding: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.tabheader {
+  width: 280px;
+  padding: 35px 30px;
+  background-color: #fff;
+}
+.tabheader h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Catamaran', cursive;
+}
+.tabheader__items {
+  margin-top: 35px;
+  padding-left: 26px;
+  border-left: 1px solid #000;
+}
+.tabheader__item {
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.tabheader__item_active {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

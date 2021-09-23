@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('./img/back.jpg') no-repeat center center/cover;
+}
+h1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Grand Hotel', cursive;
+  color: #678e3e;
+  margin-top: 2rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+}
+.field {
+  width: 320px;
+  height: 320px;
+  border: 1px solid black;
+}
+.chess-block {
+  width: 40px;
+  height: 40px;
+  float: left;
+  background: #fff;
+}
+.bg-black {
+  background: #525252;
+}
+
+.active {
+  background: orange;
+}
+.green {
+  background: url('./img/horse.jpg') no-repeat center center/cover;
+}

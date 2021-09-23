@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Grand+Hotel&display=swap');
+
+:root {
+  --clr-primary-1: hsl(205, 89%, 68%);
+  --clr-primary-2: hsl(205, 67%, 89%);
+  --clr-primary-3: hsl(205, 78%, 60%);
+  --clr-primary-4: hsl(204, 91%, 83%);
+  --clr-grey: hsl(210, 1%, 36%);
+  --clr-blue: hsl(209, 76%, 42%);
+  --clr-gold: hsl(44, 88%, 49%);
+  --clr-white: #fff;
+  --clr-black: #222;
+  --spacing: 0.2rem;
+  --transition: all 0.3s linear;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --ff-primary: 'Grand Hotel', cursive;
+  --ff-primary2: 'Great Vibes', cursive;
+  --ff-secondary: 'Roboto', sans-serif;
+  --fixed-width: 620px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-primary-4);
+  font-family: var(--ff-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  border-radius: 5px;
+  box-shadow: var(--dark-shadow);
+  overflow: hidden;
+  width: 300px;
+}
+.header {
+  background-color: var(--clr-primary-3);
+  color: #fff;
+  padding: 30px 20px;
+}
+.title {
+  margin: 0;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  margin: 0.5rem 1.5rem;
+}
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+  letter-spacing: var(--spacing);
+  margin: 1rem 1.1rem;
+}
+.header input {
+  background-color: var(--clr-primary-4);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+}
+.header input:focus {
+  outline: none;
+}
+.user-list {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.user-list li {
+  display: flex;
+  padding: 20px;
+}
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+h3 {
+  display: none;
+}
+.user-list .user-info {
+  margin-left: 10px;
+}
+.user-list .user-info h4 {
+  margin: 0 0 10px;
+}
+.user-list .user-info p {
+  font-size: 12px;
+}
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+.user-list li.hide {
+  display: none;
+}
+.loading {
+  display: block;
+  margin: 0 auto;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, var(--clr-blue));
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, var(--clr-primary-1));
+}

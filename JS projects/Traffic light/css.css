@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, rgba(80,68,18,0.2), 50%, transparent), url('./img/background.png') center/contain no-repeat; 
+    overflow: hidden; 
+    display: flex;
+	  align-items: center;
+	 justify-content: center;
+}
+h1{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Grand Hotel', cursive;
+  color: #bb061e;
+  margin-top: 2rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  animation: slideFromLeft 5s ease-in-out 1;
+}
+
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.transfer_red{
+	position: absolute;
+	top: 34%;
+	left: 75.5%;
+	width: 3%;
+}
+.transfer_yellow{
+	position: absolute;
+	top: 41.5%;
+	left: 75%;
+	width: 3%;
+
+}
+.transfer_green{
+	position: absolute;
+	top: 49%;
+	left: 74.5%;
+	width: 3%;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-450px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(200);
+    opacity: 1;
+  }
+}

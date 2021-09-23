@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ec746b;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+}
+
+h1 {
+  font-family: 'Grand Hotel', cursive;
+  color: #77dd65;
+  margin-bottom: 2rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.box {
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+.box h2 {
+  width: 100%;
+  margin: 2rem 5rem;
+}
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.box.show {
+  transform: translateX(0);
+}
+.animation {
+  position: fixed;
+  top: 0;
+  right: 70rem;
+  background: url('./img/cat4.png') center/contain no-repeat;
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes trambling-animation {
+  0%,
+  10%,
+  20%,
+  30%,
+  40%,
+  50% {
+    transform: rotate(0deg);
+  }
+
+  51%,
+  53%,
+  55%,
+  57%,
+  59%,
+  61%,
+  63%,
+  65%,
+  67%,
+  69%,
+  71%,
+  73%,
+  75%,
+  77%,
+  79%,
+  81%,
+  83%,
+  85%,
+  87%,
+  89%,
+  91%,
+  93%,
+  95%,
+  97%,
+  99% {
+    transform: rotate(-2deg);
+  }
+
+  52%,
+  54%,
+  56%,
+  58%,
+  60%,
+  62%,
+  64%,
+  66%,
+  68%,
+  70%,
+  72%,
+  74%,
+  76%,
+  78%,
+  80%,
+  82%,
+  84%,
+  86%,
+  88%,
+  90%,
+  92%,
+  94%,
+  96%,
+  98% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

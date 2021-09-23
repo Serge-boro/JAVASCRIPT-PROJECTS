@@ -1,0 +1,109 @@
+.navbar {
+  position: relative;
+  z-index: 300;
+
+  &-navigation {
+    display: flex;
+
+    &-left {
+      width: 50vw;
+      height: 100vh;
+      background-color: $color-dark;
+      position: fixed;
+      right: -50vw;
+      transition: right 0.8s;
+
+      .left-img {
+        width: 35%;
+        position: absolute;
+        box-shadow: 0 15px 60px rgba($color-black, 0.4);
+        opacity: 0.7;
+        border-radius: 10px;
+      }
+
+      .left-img-1 {
+        top: 10%;
+        left: 10%;
+      }
+      .left-img-2 {
+        top: 20%;
+        left: 20%;
+      }
+      .left-img-3 {
+        top: 30%;
+        left: 30%;
+      }
+      .left-img-4 {
+        top: 40%;
+        left: 40%;
+      }
+      .left-img-5 {
+        top: 50%;
+        left: 50%;
+      }
+      .left-img-6 {
+        top: 60%;
+        left: 60%;
+      }
+      .left-img-7 {
+        top: 70%;
+        left: 70%;
+      }
+      .left-img-8 {
+        top: 80%;
+        left: 80%;
+      }
+    }
+
+    &-right {
+      width: 50vw;
+      height: 100vh;
+      background-color: #1f1d1d;
+      position: fixed;
+      left: -50vw;
+      @include flexLoyaut;
+      transition: left 0.8s;
+    }
+    .nav-list {
+      &-item {
+        list-style: none;
+      }
+      &-link {
+        font-family: $font-dancingScript;
+        font-size: 50px;
+        @include textStyles(capitalize);
+        color: $color-secondary;
+        text-decoration: none;
+        display: block;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $color-primary;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  right: 0;
+}
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  left: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg);
+}

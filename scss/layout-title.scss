@@ -1,0 +1,86 @@
+.navbar-navigations {
+  position: relative;
+  z-index: 200;
+  display: flex;
+
+  &-lefts {
+    width: 50vw;
+    height: 100vh;
+    background-color: $color-dark;
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    right: 50vw;
+    transition: left 0.8s;
+  }
+  .left-img-title {
+    width: 35%;
+    position: absolute;
+    box-shadow: 0 15px 60px rgba($color-black, 0.4);
+    opacity: 0.7;
+    border-radius: 10px;
+  }
+  .left-img-1_1 {
+    top: 12%;
+    left: 12%;
+  }
+  .left-img-2_1 {
+    top: 20%;
+    left: 20%;
+  }
+  .left-img-3_1 {
+    top: 30%;
+    left: 30%;
+  }
+  .left-img-4_1 {
+    top: 40%;
+    left: 40%;
+  }
+  .left-img-5_1 {
+    top: 50%;
+    left: 50%;
+  }
+  .left-img-6_1 {
+    top: 60%;
+    left: 60%;
+  }
+  .left-img-7_1 {
+    top: 70%;
+    left: 70%;
+  }
+  .left-img-8_1 {
+    top: 80%;
+    left: 80%;
+  }
+
+  &-rights {
+    width: 50vw;
+    height: 100vh;
+    background-color: #1f1d1d;
+    position: fixed;
+    left: 50vw;
+    @include flexLoyaut;
+  }
+
+  .nav-list {
+    &-item {
+      list-style: none;
+    }
+    &-link {
+      font-family: $font-dancingScript;
+      font-size: 50px;
+      @include textStyles(capitalize);
+      color: $color-secondary;
+      text-decoration: none;
+      display: block;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $color-primary;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Grand+Hotel&display=swap');
+
+:root {
+  --clr-primary-1: hsl(205, 90%, 88%);
+  --clr-primary-2: hsl(205, 67%, 89%);
+  --clr-primary-3: hsl(205, 78%, 60%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-white: #fff;
+  --clr-black: #222;
+  --spacing: 0.1rem;
+  --transition: all 0.3s linear;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --ff-primary: 'Grand Hotel', cursive;
+  --ff-secondary: 'Roboto', sans-serif;
+  --fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--clr-primary-1);
+  background: var(--clr-primary-2);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+  font-size: 2rem;
+}
+@media screen and (min-width: 800px) {
+  h4 {
+    font-size: 2rem;
+    position: absolute;
+    top: 1%;
+    left: 4%;
+    line-height: 1;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+
+/*
+=============== 
+Nav
+===============
+*/
+nav {
+  background: var(--clr-white);
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: var(--dark-shadow);
+}
+.nav-center {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-center h4 {
+  margin-bottom: 0;
+  color: var(--clr-primary-3);
+}
+/*
+=============== 
+Container
+===============
+*/
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  font-family: var(--ff-secondary);
+}
+.container h2 {
+  background-color: transparent;
+  border: 2px solid var(--clr-black);
+  color: var(--clr-black);
+  padding: 1rem;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  margin-bottom: 2.5rem;
+}
+.color {
+  color: var(--clr-primary-3);
+}
+.btn-hero {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}

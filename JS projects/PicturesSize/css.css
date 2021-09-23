@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('./img/sizes-bg.jpg') center/cover no-repeat;
+}
+h1{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Grand Hotel', cursive;
+  color: #f1f5f8;
+  margin-top: 2rem;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 6rem;
+
+}
+.sizes-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sizes-block {
+  position: relative;
+  margin: 250px 0;
+}
+.sizes-block img {
+  max-width: 100%;
+}
+.sizes-block p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.sizes-block .size {
+  top: 3rem;
+  font-size: 2.4rem;
+  color: #86b7d2;
+}
+.sizes-block .starting-price {
+  bottom: 7rem;
+  text-decoration: line-through;
+}
+.sizes-block .final-price {
+  bottom: 4rem;
+  font-size: 1.8rem;
+  color: black;
+}
+.sizes-block .sizes-hit {
+  width: auto;
+  display: inline-block;
+  background-color: #f99300;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  left: 6rem;
+  bottom: -2.5rem;
+}

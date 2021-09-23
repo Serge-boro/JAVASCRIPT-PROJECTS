@@ -97,6 +97,41 @@ body {
 .checkbox:checked ~ .hamburger-menu .menu-line-3 {
   transform: rotateZ(40deg); }
 
+@media screen and (max-width: 737px) {
+  .navbar-navigation .left-img {
+    width: 70%; }
+    .navbar-navigation .left-img:hover {
+      width: 265px;
+      transition: width 0.5s;
+      z-index: 500;
+      opacity: 1; }
+  .navbar-navigation .left-img-1 {
+    top: 15%;
+    left: 15%; }
+  .navbar-navigation .left-img-2 {
+    top: 25%;
+    left: 25%; }
+  .navbar-navigation .left-img-3 {
+    top: 35%;
+    left: 15%; }
+  .navbar-navigation .left-img-4 {
+    top: 45%;
+    left: 25%; }
+  .navbar-navigation .left-img-5 {
+    top: 55%;
+    left: 15%; }
+  .navbar-navigation .left-img-6 {
+    top: 65%;
+    left: 25%; }
+  .navbar-navigation .left-img-7 {
+    top: 75%;
+    left: 15%; }
+  .navbar-navigation .left-img-8 {
+    top: 85%;
+    left: 25%; }
+  .navbar-navigation .nav-list-link {
+    font-size: 25px; } }
+
 .hamburger-menu {
   width: 40px;
   height: 40px;
@@ -116,6 +151,12 @@ body {
       background-color: #d3ab55;
       transform-origin: right;
       transition: all 0.5s 0.5s; }
+
+@media screen and (max-width: 737px) {
+  .hamburger-menu {
+    width: 30px;
+    height: 30px;
+    top: 5%; } }
 
 .navbar-navigations {
   position: relative;
@@ -186,3 +227,38 @@ body {
     .navbar-navigations .nav-list-link:hover {
       color: #d3ab55;
       letter-spacing: 4px; }
+
+@media screen and (max-width: 737px) {
+  .navbar-navigations .left-img-title {
+    width: 70%; }
+    .navbar-navigations .left-img-title:hover {
+      width: 265px;
+      transition: width 0.5s;
+      z-index: 500;
+      opacity: 1; }
+  .navbar-navigations .left-img-1_1 {
+    top: 15%;
+    left: 20%; }
+  .navbar-navigations .left-img-2_1 {
+    top: 25%;
+    left: 35%; }
+  .navbar-navigations .left-img-3_1 {
+    top: 35%;
+    left: 20%; }
+  .navbar-navigations .left-img-4_1 {
+    top: 45%;
+    left: 35%; }
+  .navbar-navigations .left-img-5_1 {
+    top: 55%;
+    left: 20%; }
+  .navbar-navigations .left-img-6_1 {
+    top: 65%;
+    left: 35%; }
+  .navbar-navigations .left-img-7_1 {
+    top: 75%;
+    left: 20%; }
+  .navbar-navigations .left-img-8_1 {
+    top: 85%;
+    left: 35%; }
+  .navbar-navigations .nav-list-link {
+    font-size: 25px; } }

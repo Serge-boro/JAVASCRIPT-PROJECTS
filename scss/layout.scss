@@ -107,3 +107,55 @@
 .checkbox:checked ~ .hamburger-menu .menu-line-3 {
   transform: rotateZ(40deg);
 }
+
+@media screen and (max-width: 737px) {
+  .navbar-navigation {
+    .left-img {
+      width: 70%;
+      &:hover {
+        width: 265px;
+        transition: width 0.5s;
+        z-index: 500;
+        opacity: 1;
+      }
+    }
+    .left-img-1 {
+      top: 15%;
+      left: 15%;
+    }
+    .left-img-2 {
+      top: 25%;
+      left: 25%;
+    }
+    .left-img-3 {
+      top: 35%;
+      left: 15%;
+    }
+    .left-img-4 {
+      top: 45%;
+      left: 25%;
+    }
+    .left-img-5 {
+      top: 55%;
+      left: 15%;
+    }
+    .left-img-6 {
+      top: 65%;
+      left: 25%;
+    }
+    .left-img-7 {
+      top: 75%;
+      left: 15%;
+    }
+    .left-img-8 {
+      top: 85%;
+      left: 25%;
+    }
+
+    .nav-list {
+      &-link {
+        font-size: 25px;
+      }
+    }
+  }
+}
